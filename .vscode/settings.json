@@ -1,0 +1,10 @@
+{
+  "woke.compiler.solc.remappings": [
+    "deploy/=deploy/",
+    "ds-test/=lib/forge-std/lib/ds-test/src/",
+    "forge-std/=lib/forge-std/src/",
+    "interfaces/=src/interfaces/",
+    "script/=script/",
+    "src/=src/"
+  ]
+}

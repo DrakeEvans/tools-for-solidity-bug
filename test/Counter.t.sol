@@ -2,14 +2,16 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/Counter.sol";
+import "../src/Counter.sol" as MyCounters;
+import * as Constants from "src/Constants.sol";
 
 contract CounterTest is Test {
-    Counter public counter;
+    MyCounters.Counter public counter;
 
     function setUp() public {
-        counter = new Counter();
+        counter = new MyCounters.Counter();
         counter.setNumber(0);
+        address _someAddress = Constants.Mainnet.FRAX_ERC20;
     }
 
     function testIncrement() public {
