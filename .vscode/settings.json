@@ -6,5 +6,8 @@
     "interfaces/=src/interfaces/",
     "script/=script/",
     "src/=src/"
-  ]
+  ],
+  "woke.compiler.solc.via_IR": false,
+  "woke.compiler.solc.optimizer.enabled": false,
+  "Tools-for-Solidity.Woke.port": 11894
 }
